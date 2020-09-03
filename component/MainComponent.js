@@ -87,10 +87,7 @@ const CustomDrawerContentComponent=(props)=>(
             // horizontal:"never"
         }}
         >
-            <View>
-            <DrawerItems {...props}/>
-            </View>
-            <View style={style.drawerHeader}>
+             <View style={style.drawerHeader}>
                 <View style={{flex:1}}>
                     <Image source={require('./images/logo.png')} style={style.drawerImage}/>
                 </View>
@@ -98,6 +95,10 @@ const CustomDrawerContentComponent=(props)=>(
                     <Text style={style.drawerHeaderText}>Ristorante Con Fusion</Text>
                 </View>
             </View>
+            <View style={{flex:2,backgroundColor:"white"}}>
+            <DrawerItems {...props}/>
+            </View>
+           
         </SafeAreaView>
     </ScrollView>
 )
